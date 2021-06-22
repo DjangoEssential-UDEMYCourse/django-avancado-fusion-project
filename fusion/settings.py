@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'fusion.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'fusuion',
+        'NAME': 'fusion',
         'USER': 'adminpg',
         'PASSWORD': 'adminpg',
-        'LOCALHOST': 'localhost',
-        'PORT': '5332',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
