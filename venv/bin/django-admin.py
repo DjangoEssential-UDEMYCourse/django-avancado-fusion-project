@@ -1,4 +1,4 @@
-#!/home/rmsistema/PycharmProjects/fusion/venv/bin/python
+#!/home/rm-0012/PycharmProjects/fusionProject/venv/bin/python
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 

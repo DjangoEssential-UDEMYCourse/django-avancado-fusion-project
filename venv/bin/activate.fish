@@ -29,7 +29,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/rmsistema/PycharmProjects/fusion/venv"
+set -gx VIRTUAL_ENV "/home/rm-0012/PycharmProjects/fusionProject/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

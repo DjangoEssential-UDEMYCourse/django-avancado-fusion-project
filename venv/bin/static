@@ -1,4 +1,4 @@
-#!/home/rmsistema/PycharmProjects/fusion/venv/bin/python
+#!/home/rm-0012/PycharmProjects/fusionProject/venv/bin/python
 # EASY-INSTALL-ENTRY-SCRIPT: 'static3==0.7.0','console_scripts','static'
 import re
 import sys
