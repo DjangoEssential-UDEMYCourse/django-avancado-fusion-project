@@ -3,12 +3,12 @@ from .models import Servico, Funcionario, Recurso
 
 
 class IndexView(TemplateView):
-	template_name = 'index.html'
+    template_name = 'index.html'
 
-	def get_context_data(self, **kwargs):
-		context = super(IndexView, self).get_context_data(**kwargs)
-		context['servicos'] = Servico.objects.order_by('?').all()
-		context['funcionarios'] = Funcionario.objects.order_by('?').all()
-		context['recursos'] = Recurso.objects.order_by('?').all()
-		context["meialista"] = str(len(context['recursos']))
-		return context
+    def get_context_data(self, **kwargs):
+        context = super(IndexView, self).get_context_data(**kwargs)
+        context['servicos'] = Servico.objects.order_by('?').all()
+        context['funcionarios'] = Funcionario.objects.order_by('?').all()
+        context['recursos'] = list(Recurso.objects.order_by('?').all())
+        print(type(context['recursos']))
+        return context
