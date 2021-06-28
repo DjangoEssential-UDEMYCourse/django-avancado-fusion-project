@@ -87,3 +87,31 @@ class Recurso(Base):
 
     def __str__(self):
         return self.nome
+
+
+class Cliente(Base):
+    nome = models.CharField('Nome', max_length=100)
+    profissao = models.CharField('Profissão', max_length=100)
+    imagem = StdImageField('Imagem', upload_to=get_file_path, variations={'thumb': {'width': 75, 'height': 75, 'crop': True}}, default='')
+
+    class Meta:
+        verbose_name = "Cliente"
+        verbose_name_plural = "Clientes"
+
+    def __str__(self):
+        return self.nome
+
+
+class Comentario(Base):
+    comentario = models.TextField('Comentário', max_length=500)
+    cliente = models.OneToOneField(Cliente,
+                                   verbose_name="Cliente",
+                                   on_delete=models.CASCADE,
+                                   primary_key=True)
+
+    class Meta:
+        verbose_name = "Comentario"
+        verbose_name_plural = "Comentarios"
+
+    def __str__(self):
+        return self.comentario
