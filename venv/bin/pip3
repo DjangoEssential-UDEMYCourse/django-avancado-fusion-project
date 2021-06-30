@@ -1,4 +1,4 @@
-#!/home/rm-0012/PycharmProjects/fusionProject/venv/bin/python
+#!/home/rm-0012/PycharmProjects/django-avancado-fusion-project/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
