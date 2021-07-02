@@ -1,8 +1,9 @@
 ```python 
- pip3 install django
+ pip install django
  django-admin startproject fusion .
  django-admin startapp core
- pip3 install gunicorn dj-static django-stdimage psycopg2-binary
- pip3 install dj-database-url
- pip3 freeze > requirements.txt
+ pip install gunicorn dj-static django-stdimage psycopg2-binary
+ pip install dj-database-url
+ pip install model_mommy coverage 
+ pip freeze > requirements.txt
 ```
