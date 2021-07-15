@@ -47,6 +47,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -131,7 +132,7 @@ USE_L10N = True
 USE_TZ = True
 
 
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 """
 EMAIL_HOST ='localhost'
@@ -156,3 +157,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGOUT_REDIRECT_URL = 'index'
+
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
