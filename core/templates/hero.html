@@ -1,5 +1,5 @@
 {% load static %}
-
+{% load i18n   %}
   <!-- Hero Area Start -->
   <div id="hero-area" class="hero-area-bg">
 
@@ -17,12 +17,12 @@
       <div class="row">
         <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
           <div class="contents">
-            <h2 class="head-title">Com a Fusion Template <br /> Você irá mais longe! </h2>
-            <h2 class="head-title">Nós fazemos mais por você! </h2>
-            <p>Nós não estudamos na Geek University para ganhar pouco dinheiro.</p>
+            <h2 class="head-title">{% trans 'Com a Fusion Template' %} <br /> {% trans 'Você irá mais longe!' %} </h2>
+            <h2 class="head-title">{% trans 'Nós fazemos mais por você!' %} </h2>
+            <p>{% trans 'Nós não estudamos na Geek University para ganhar pouco dinheiro.' %}</p>
             <div class="header-button">
-              <a href="#" class="btn btn-common">Saiba Mais</i></a>
-              <a href="#" class="btn btn-border video-popup">Entre em contato!</i></a>
+              <a href="#" class="btn btn-common">{% trans 'Saiba Mais' %}</i></a>
+              <a href="#" class="btn btn-border video-popup">{% trans 'Entre em contato!' %}</i></a>
             </div>
           </div>
         </div>

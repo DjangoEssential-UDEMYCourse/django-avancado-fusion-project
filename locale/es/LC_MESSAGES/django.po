@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 13:52-0300\n"
-"PO-Revision-Date: 2021-07-15 15:13-0300\n"
+"POT-Creation-Date: 2021-07-16 09:06-0300\n"
+"PO-Revision-Date: 2021-07-16 09:15-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Last-Translator: \n"
-"Language-Team: \n"
 "X-Generator: Poedit 3.0\n"
 
 #: core/forms.py:7 core/forms.py:18 core/models.py:81 core/models.py:94
@@ -82,7 +82,7 @@ msgstr "Descripción"
 msgid "Icone"
 msgstr "Icono"
 
-#: core/models.py:38
+#: core/models.py:38 core/templates/base.html:50
 msgid "Serviços"
 msgstr "Servicios"
 
@@ -138,7 +138,7 @@ msgstr "Café en paz"
 msgid "Recurso"
 msgstr "Recurso"
 
-#: core/models.py:87
+#: core/models.py:87 core/templates/base.html:55
 msgid "Recursos"
 msgstr "Recursos"
 
@@ -150,7 +150,7 @@ msgstr "Profesión"
 msgid "Cliente"
 msgstr "Cliente"
 
-#: core/models.py:100
+#: core/models.py:100 core/templates/base.html:70
 msgid "Clientes"
 msgstr "Clientes"
 
@@ -161,6 +161,79 @@ msgstr "Comentario"
 #: core/models.py:115
 msgid "Comentarios"
 msgstr "Comentarios"
+
+#: core/templates/404.html:10
+msgid "Página não encontrada!"
+msgstr "¡Página no encontrada!"
+
+#: core/templates/404.html:11
+msgid "Infelizmente esta página não existe"
+msgstr "Desafortunadamente esta página no existe."
+
+#: core/templates/500.html:10
+msgid "Erro de Processamento!"
+msgstr "Error de proceso!"
+
+#: core/templates/500.html:11
+msgid "Infelizmente sua solicitação não pode ser processada."
+msgstr "Desafortunadamente, su solicitud no se puede procesar."
+
+#: core/templates/500.html:13
+msgid "Voltar para a página principal"
+msgstr "Volver a la pagina principal"
+
+#: core/templates/base.html:45
+msgid "Início"
+msgstr "Comienzo"
+
+#: core/templates/base.html:60
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2186
+msgid "Time"
+msgstr "Equipo"
+
+#: core/templates/base.html:65
+msgid "Preços"
+msgstr "Precios"
+
+#: core/templates/base.html:75
+msgid "Contato"
+msgstr "Contacto"
+
+#: core/templates/contato.html:7
+msgid "Contate-nos"
+msgstr "Contáctenos"
+
+#: core/templates/equipe.html:6
+msgid "Conheça nossa Equipe"
+msgstr "Conozca a nuestro equipo"
+
+#: core/templates/features.html:7
+msgid "Nossos Recursos Incriveis"
+msgstr "Nuestras increíbles características"
+
+#: core/templates/hero.html:20
+msgid "Com a Fusion Template"
+msgstr "Con plantilla Fusion"
+
+#: core/templates/hero.html:20
+msgid "Você irá mais longe!"
+msgstr "¡Irás más lejos!"
+
+#: core/templates/hero.html:21
+msgid "Nós fazemos mais por você!"
+msgstr "¡Hacemos más por ti!"
+
+#: core/templates/hero.html:22
+msgid "Nós não estudamos na Geek University para ganhar pouco dinheiro."
+msgstr "No estudiamos en la Universidad Geek por poco dinero."
+
+#: core/templates/hero.html:24
+msgid "Saiba Mais"
+msgstr "Sepa mas"
+
+#: core/templates/hero.html:25
+msgid "Entre em contato!"
+msgstr "¡Entre en contacto!"
 
 #: core/views.py:32
 msgid "E-mail enviado com sucesso."
@@ -550,10 +623,6 @@ msgstr ""
 msgid ""
 "“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
 "invalid time."
-msgstr ""
-
-#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2186
-msgid "Time"
 msgstr ""
 
 #: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2312
